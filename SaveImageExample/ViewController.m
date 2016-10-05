@@ -8,22 +8,53 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
-
-@end
-
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *urlString = @"i1.theportalwiki.net/img/thumb/7/79/GLaDOS_P2.png/400px-GLaDOS_P2.png";
+    
+    self.url = [self cleanURL:[NSURL URLWithString:urlString]];
+    
+    self.webView.delegate = self;
+    
+    [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:self.url]];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - private methods
+- (NSURL *)cleanURL:(NSURL *)url
+{
+    //If no URL scheme was supplied, defer back to HTTP.
+    if (url.scheme.length == 0) {
+        url = [NSURL URLWithString:[NSString stringWithFormat:@"https://%@", [url absoluteString]]];
+    }
+    
+    return url;
 }
 
+#pragma mark - UIWebViewDelegate
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+    NSLog(@"start load");
+}
+
+- (BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType
+{
+    return YES;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSLog(@"finish load");
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+    NSLog(@"load fail");
+    
+}
 
 @end
