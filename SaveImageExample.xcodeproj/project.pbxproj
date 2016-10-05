@@ -13,8 +13,8 @@
 		6E2F24A91DA42943007E795C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F24A71DA42943007E795C /* Main.storyboard */; };
 		6E2F24AB1DA42943007E795C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F24AA1DA42943007E795C /* Assets.xcassets */; };
 		6E2F24AE1DA42943007E795C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E2F24AC1DA42943007E795C /* LaunchScreen.storyboard */; };
-		6E2F24BC1DA42C8A007E795C /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E2F24B91DA42C8A007E795C /* ImageHelper.m */; };
-		6ED1833C1DA5844B00AC4AAD /* SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED1833B1DA5844B00AC4AAD /* SwizzleMethod.m */; };
+		6ED183471DA585CE00AC4AAD /* ImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED183441DA585CE00AC4AAD /* ImageHelper.m */; };
+		6ED183481DA585CE00AC4AAD /* SwizzleMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ED183461DA585CE00AC4AAD /* SwizzleMethod.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,11 +28,11 @@
 		6E2F24AA1DA42943007E795C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6E2F24AD1DA42943007E795C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E2F24AF1DA42943007E795C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E2F24B81DA42C8A007E795C /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageHelper.h; sourceTree = "<group>"; };
-		6E2F24B91DA42C8A007E795C /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageHelper.m; sourceTree = "<group>"; };
 		6E2F24BE1DA42EB6007E795C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
-		6ED1833A1DA583E200AC4AAD /* SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwizzleMethod.h; sourceTree = "<group>"; };
-		6ED1833B1DA5844B00AC4AAD /* SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwizzleMethod.m; path = "SaveImageExample/Save Image/SwizzleMethod.m"; sourceTree = SOURCE_ROOT; };
+		6ED183431DA585CE00AC4AAD /* ImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageHelper.h; path = "SaveImageExample/Save Image/ImageHelper.h"; sourceTree = SOURCE_ROOT; };
+		6ED183441DA585CE00AC4AAD /* ImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageHelper.m; path = "SaveImageExample/Save Image/ImageHelper.m"; sourceTree = SOURCE_ROOT; };
+		6ED183451DA585CE00AC4AAD /* SwizzleMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwizzleMethod.h; path = "SaveImageExample/Save Image/SwizzleMethod.h"; sourceTree = SOURCE_ROOT; };
+		6ED183461DA585CE00AC4AAD /* SwizzleMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwizzleMethod.m; path = "SaveImageExample/Save Image/SwizzleMethod.m"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +91,10 @@
 		6E2F24BA1DA42C8A007E795C /* Save Image */ = {
 			isa = PBXGroup;
 			children = (
-				6ED1833B1DA5844B00AC4AAD /* SwizzleMethod.m */,
-				6ED1833A1DA583E200AC4AAD /* SwizzleMethod.h */,
-				6E2F24B81DA42C8A007E795C /* ImageHelper.h */,
-				6E2F24B91DA42C8A007E795C /* ImageHelper.m */,
+				6ED183431DA585CE00AC4AAD /* ImageHelper.h */,
+				6ED183441DA585CE00AC4AAD /* ImageHelper.m */,
+				6ED183451DA585CE00AC4AAD /* SwizzleMethod.h */,
+				6ED183461DA585CE00AC4AAD /* SwizzleMethod.m */,
 			);
 			name = "Save Image";
 			path = "../../../../Documents/iOS/iOS-Application/manulife/Classes";
@@ -179,11 +179,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2F24BC1DA42C8A007E795C /* ImageHelper.m in Sources */,
 				6E2F24A61DA42943007E795C /* ViewController.m in Sources */,
 				6E2F24A31DA42943007E795C /* AppDelegate.m in Sources */,
 				6E2F24A01DA42943007E795C /* main.m in Sources */,
-				6ED1833C1DA5844B00AC4AAD /* SwizzleMethod.m in Sources */,
+				6ED183471DA585CE00AC4AAD /* ImageHelper.m in Sources */,
+				6ED183481DA585CE00AC4AAD /* SwizzleMethod.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
